@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen en Línea</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="exam-container" class="container">
+      <div id="start-screen" class="card">
+        <h1>🧠 Examen de Hardware</h1>
+        <p>Identifícate para comenzar el examen</p>
+        <input
+          type="text"
+          id="dni"
+          placeholder="Ingrese su DNI"
+          maxlength="8"
+          required />
+        <input
+          type="text"
+          id="name"
+          placeholder="Ingrese su nombre completo"
+          required />
+        <button id="start-btn">Comenzar examen</button>
+      </div>
+
+      <div id="exam-screen" class="hidden">
+        <header>
+          <h2>Examen de Hardware</h2>
+          <div id="timer" class="timer">40:00</div>
+        </header>
+
+        <div id="questions-container"></div>
+
+        <button id="submit-btn" class="submit-btn">Enviar Examen</button>
+      </div>
+
+      <div id="warning-message" class="hidden warning"></div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Examen de Hardware</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="questions.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <section id="startSection">
+        <h2>Identificación del Alumno</h2>
+        <input type="text" id="dni" placeholder="DNI" /><br /><br />
+        <input
+          type="text"
+          id="nombre"
+          placeholder="Nombre completo" /><br /><br />
+        <button onclick="saveStudent()">Guardar datos</button>
+        <button
+          id="fullscreenBtn"
+          style="display: none"
+          onclick="enterFullscreen()">
+          Entrar en pantalla completa
+        </button>
+      </section>
+
+      <section id="examSection" style="display: none">
+        <div id="timer">⏱️ 40:00</div>
+        <div id="warning" class="warning" style="display: none"></div>
+        <div id="questionContainer"></div>
+      </section>
+    </div>
+  </body>
+</html> -->
